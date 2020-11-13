@@ -34,15 +34,13 @@ void somefunction()  {
     relayState1 = !relayState1;
   }
   digitalWrite(relay1, relayState1);
-  delay(2000);
-  //digitalWrite(relay1, LOW);
-  //digitalWrite(relay2, LOW);
+  //delay(2000);
 
   if ( relayVButton2 > 0 && relayVButton1 < 1) {
     relayState2 = !relayState2;
   }
   digitalWrite(relay2, relayState2);
-  delay(2000);
+  //delay(2000);
 
   BLYNK_WRITE(V10)
   {
